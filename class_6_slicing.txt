@@ -1,0 +1,58 @@
+Slicing Of a String:-
+-------------------
+When we slicce a sub string into a string this time we call string slicing.
+
+Rule:-
+----
+Python is a zero base index system
+Left to Right positive index:- starts from 0
+Right to Left Negetive index :- starts from -1
+
+Square bracket([]) use for opeartor of slicing.
+
+Syntax:-
+
+Variable[start:end+1:steps] 
+
+Ex:-
+Postive
+>>> a[0:3:1]
+'Qwe'
+>>> a[1:5:1]
+'wert'
+>>> a[0:3]
+'Qwe'
+>>> a[1:5]
+'wert'
+>>> 
+
+
+Negetive:-
+
+>>> a[-5:-1]
+'wert'
+>>> a[-6:-3]
+'Qwe'
+>>> 
+
+--------------------------------------
+Topic se bahar, just for showing
+
+bank = input("Enter your bank name:-")
+ifsc = int(input("Enter your ifsc:-"))
+
+b_new = bank.split(' ')
+#print(b_new)
+b = []
+for i in b_new:
+    b.append(i[0])
+    if i == 'India':
+        b.append(i[1])
+a = ''
+for j in b:
+    a = a+j
+a= a+str(ifsc)
+print(a)
+----------------------
+s = 'Harishankar'
+print(s[4:])

@@ -1,0 +1,218 @@
+Operators:-
+---------
+
+Operator is a symbol or sign or word  that perform certain operation.
+
+In python there are 6 type of opeartors.
+
+1.Arithmetic Op.
+2.Relational Op. or Comparision Op.
+3.Logical Op.
+4.Bitwise Op.(Not required)
+5.Assignment Op.
+6.Special Op.
+
+1.Arithmetic Op.:- It's contain some mathematical signs.
+
++  addition
+
+>>> a = 10
+>>> b= 20
+>>> a+b
+30
+>>> 
+
+-  sunstraction
+
+>>> a-b
+-10
+>>> 
+
+*  multiplication
+
+>>> a*b
+200
+>>> 
+/  division
+
+>>> a/b
+0.5
+>>> 
+
+%  modulo(reminder)
+
+>>> 27%5
+2
+>>> 21%4
+1
+>>> 
+
+
+** exponent(power)
+
+>>> 2**3
+8
+>>> 3**4
+81
+>>> 2**4
+16
+>>> 
+
+
+// floor division
+
+>>> 28//3
+9
+>>> 20//5
+4
+>>> 
+
+
+Relational Opeartor:- Return boolen value(True or False)
+
+>,>=,<,<= , ==(equal to) , !=(not equal to)
+
+
+>,>=
+>>> 10>20
+False
+>>> 21>20
+True
+>>> 10>=10
+True
+>>> 10>=11
+False
+
+
+
+<,<= 
+
+>>> 
+>>> 10<9
+False
+>>> 10<11
+True
+>>> 10<=9
+False
+>>> 10<=10
+True
+>>> 
+
+==(equal to) , !=(not equal to)
+>>> 10 == 10
+True
+>>> 10 == 11
+False
+>>> 
+>>> 10 != 10
+False
+>>> 10 != 11
+True
+
+
+3.Logical Op.:-
+
+and , or ,not
+
+and:- If both the condition or argumnets are True then only result True.
+
+T    T      T
+T    F      F
+F    T      F
+F    F      F
+
+
+or :- If atleast or condtion or argument is True then result is also True
+
+T    T    T
+T    F    T
+F    T    T
+F    F    F
+
+
+
+not:- Compliment
+
+>>> not True
+False
+>>> not False
+True
+>>> 
+
+
+5.Assignment Op.:-
+
+We can use assignment opeartor to assign value to the variable 
+
+
+a = 10
+
+Compond Assignment Opeartor:- We can combine assignment opeartor with some other(arithmentic) operator to form compound assignment opeartor.
+
+>>> x = 12
+>>> 
+>>> x = x+10
+>>> x
+22
+>>> 
+>>> y = 12
+>>> 
+>>> y+=10
+>>> y
+22
+
++=
+-=
+*=
+/=
+
+
+6.Special Op.:-
+
+Python defines 2 special opeartors
+
+> Identity Op.
+> Membership Op.
+
+> Identity Op.:- obj_1 and obj_2 return True if both are pointing the same object or same location
+
+using is keyword :- is, is not
+
+>>> 
+>>> a = 10
+>>> b = 12
+>>> 
+>>> a is b
+False
+>>> 
+>>> a = 10
+>>> b = 10
+>>> 
+>>> a is b
+True
+>>> 
+>>> 
+>>> a = 10
+>>> b = 12
+>>> 
+>>> a is not b
+True
+>>> 
+
+
+> Membership Op.:- We can use membership opeartor to check whether the given object present in the given collection(List,tupke,set,str....)
+
+in:- Retrun True if the given object present in the specified collection
+
+>>> a = [10,30,50,90]
+>>> 10 in a
+True
+>>> 56 in a
+False
+>>> 67 in a
+False
+>>> 90 in a
+True
+>>> 
+
+not in:- oppsite of in.

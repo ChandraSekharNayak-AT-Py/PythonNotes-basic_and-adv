@@ -1,0 +1,182 @@
+Float Datatype:-
+---------------
+
+we can use fload type to represent decimal point values(Floating Value)
+
+>>> a = 1.0
+>>> type(a)
+<class 'float'>
+>>> 
+>>> b = -1.0
+>>> type(b)
+<class 'float'>
+>>> 
+>>> c = 78.9765678
+>>> type(c)
+<class 'float'>
+>>> 
+>>> c = -98.786786
+>>> type(c)
+<class 'float'>
+>>> 
+
+In Float Base Converstion is not possiable.
+
+>>> a = 1.0
+>>> bin(a)
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    bin(a)
+TypeError: 'float' object cannot be interpreted as an integer
+>>> 
+
+
+
+
+Complex Number:-
+--------------
+
+Real part + Imaginary Part = complex number
+
+>>> a = 7+8j
+>>> type(a)
+<class 'complex'>
+>>> 
+>>> b = -7-8j
+>>> type(b)
+<class 'complex'>
+>>> 
+>>> c = 7.8-+9.78j
+>>> type(c)
+<class 'complex'>
+>>> d = -7.8-9.78j
+>>> type(d)
+<class 'complex'>
+
+
+Note:- Real Part only operation with another complex number Real part only and imaginary with imaginary only.
+
+>>> a = 7+9j
+>>> b = 8+10j
+>>> a+b
+(15+19j)
+
+
+Boolean:-
+--------
+Boolean Values Represnt two keyword True and False.
+
+True :-
+
+If condition is correct.
+If in a container element is present then True
+
+False :-
+
+If condition is Incorrect.
+If in a container element is not present then False
+
+--------------------------
+
+Ex:-1
+>>> a = 10
+>>> b = 20
+>>> 
+
+>>> a>b
+False
+>>> a<b
+True
+>>> 
+
+Ex:- 2
+
+>>> a = [10,20,40,50]
+>>> 
+>>> 10 in a
+True
+>>> 50 in a
+True
+>>> 30 in a
+False
+>>> 
+
+
+Note :- If something is exits then it's True(1) ,if nothing is exits then False(0)
+
+>>> 
+>>> True+True
+2
+>>> True+False
+1
+>>> False + False
+0
+
+--------------------------
+>>> a = True
+>>> type(a)
+<class 'bool'>
+>>> b = False
+>>> type(b)
+<class 'bool'>
+>>> 
+
+
+Important Datatype:-  String, List and Dictionary
+
+
+String:-str()
+---------
+
+A String is a sequence of characters enclosed in single quote('') or double quotes("") 
+
+
+>>> s = 'TRDGHCJHFGgjgjgujgugu43564647!@$^&*()[:"   '
+>>> type(s)
+<class 'str'>
+>>> s = '786785764'
+>>> type(s)
+<class 'str'>
+>>> s = '&^%^$&^&*'
+>>> type(s)
+<class 'str'>
+>>> s = ' '
+>>> type(s)
+<class 'str'>
+>>> s = ''
+>>> type(s)
+<class 'str'>
+>>> 
+>>> s = "TRDGHCJHFGgjgjgujgugu43564647!@$^&*()[:   "
+>>> type(s)
+<class 'str'>
+>>> s = ""
+>>> type(s)
+<class 'str'>
+>>> 
+
+
+Triple Quote:- It's represent as a documentation of string (doc_string)
+
+2types of triple quote
+
+1.Singe Triple quote = ''' '''
+2.Double Triple Quoets = """  """
+
+
+Reason :-
+
+1.Reson of writen Function or Class.
+
+def cal_make():
+	''' This function is use for calculater Purpose'''
+	""" This function is use for calculater Purpose"""
+
+
+2. Multile Comment:-
+
+'''file = open("C:\\Users\\chand\\OneDrive\\Documents\\questions.txt", "r")
+data = file.read()
+print(data)
+w = data.split()
+print(len(w))'''

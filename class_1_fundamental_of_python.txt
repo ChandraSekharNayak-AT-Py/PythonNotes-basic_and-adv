@@ -1,0 +1,94 @@
+Language Fundamental:-
+--------------------
+
+
+Introduction:-
+
+
+1.Python is a general purpose of high level programming lang.
+
+	> Low level:- Binary :- Development:- very very slow and Deploment :- Very Fast
+	> Medium level :- Keyboard :- Converter :- Development fast , deploment :- Very Slow
+	> High Level :- Oop's(Object Oriented Programming) and Pop's(Procedure Oriented Programming)
+
+2.Python was developed by "Guido Van Rossam" in 1989 in Netherland developed lang "abc" :- 'perl + c++'
+
+3.20th feb 1991 "Python"
+
+4.Python is scripting language.
+
+--------------------------------------------------
+
+Print("Hello Pune Guy's")
+
+Java:-
+
+public Class Hello
+{
+	p s v main[String]args
+
+	{
+		SOP("Hello Pune Guy's")
+	}
+}
+
+c:-
+
+#include<stdio.h>
+void main()
+{
+	print("Hello Pune Guy's)
+}
+
+python:-
+
+print("Hello Pune Guy's")
+
+
+
+where we can use python:-
+-----------------------
+
+1.For developing desktop application.
+2.For developing web application.
+3.For developing database applications.
+4.For Network Programming.
+5.For developing games.
+6.For Data Analysis application.
+7.For Machine Leaning.
+8.For Developing AI Application.
+9.IOT (Internet Of things)
+
+Limitation of python:-
+-----------------
+
+1.Mobile sector.
+2.Banking application.
+
+
+Features Of Python:-
+--------------------
+
+
+1.Simple and Easy:- 
+2.Freeware and Open source
+3.High level proramming
+4.Platform Independent := PVM:- 
+5.Portability.
+6.Dynamic Typed
+7.Both Procedure and Object Oriented.
+8.Extensive Lib :- 65k+
+
+
+Flavours Of Python:-
+
+1.Jython or JPython
+2.CPython
+3.IronPythom(.net)
+4.RubyPython
+
+Python Version:-
+---------------
+Python 1.0V -- 1994
+Python 2.0V -- 2000
+Python 3.0V  -- 2008

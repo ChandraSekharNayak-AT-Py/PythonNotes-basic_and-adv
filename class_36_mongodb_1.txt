@@ -1,0 +1,40 @@
+MongoDb is a database, it's looks like nosql :- no sqtructure squery language
+
+RDBMS store the data in tabluar form.
+
+
+
+id   age     salary
+
+A        23      56677,70000
+B        56      7899
+C        65     65765687
+D        45     null
+null    67      767676
+null    56      76775
+
+
+id   age     salary
+
+A        23      [56677,70000]
+B        56      7899
+C        65     65765687
+D        45     
+    	 67      767676
+         56      76775
+
+{'Employye':
+
+{'id':'A','age':23:',salary':[56677,70000]}
+{'id':'D','age':45:'}
+{'age':23:',salary':76775]}
+
+}
+
+
+2platform
+
+1. mongo:- mongo shell :- command line utility  command
+2. mondoD :- Compass :- GUI :- Graphical user interface --- database
+
+port numver :- 27017

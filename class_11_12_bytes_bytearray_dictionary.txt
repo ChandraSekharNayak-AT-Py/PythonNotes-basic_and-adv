@@ -1,0 +1,172 @@
+bytes:- It's a immutable datatype, we can create a bytes using help of type casting, but condition here is it's only accept 0 to 255 values.
+
+>>> li = [78,56,123,255,78]
+>>> by = bytes(li)
+>>> type(by)
+<class 'bytes'>
+
+Note:- If a put above 255, it's showing ValueError.
+
+>>> li = [78,56,123,256,78]
+>>> by = bytes(li)
+Traceback (most recent call last):
+  File "<pyshell#23>", line 1, in <module>
+    by = bytes(li)
+ValueError: bytes must be in range(0, 256)
+
+
+bytearryy:- It's a mutable datatype, we can create a bytearray using help of type casting, but condition here is it's only accept 0 to 255 values.
+
+>>> li = [78,56,123,255,78]
+>>> byts = bytearray(li)
+>>> byts
+bytearray(b'N8{\xffN')
+>>> type(byts)
+<class 'bytearray'>
+
+
+Note:- If a put above 255, it's showing ValueError.
+
+>>> li = [78,56,123,256,78]
+>>> byts = bytearray(li)
+Traceback (most recent call last):
+  File "<pyshell#29>", line 1, in <module>
+    byts = bytearray(li)
+ValueError: byte must be in range(0, 256)
+>>> 
+
+
+range:- Now we hold this one, we will continuw after flow control(for loop).
+
+
+                           
+
+                                 Dictionary(dict())
+                                 -----------------
+
+
+if we want to represent a group of values as key-alues pairs then we should go for dictionary.
+
+>> Dictionary keys are not allowed duplicates data, but values are allowed duplicasy. If we are trying to insert duplicate key it's showing either error or new key inserted.
+
+
+>>> d = {'Name':'Krishna','Age':25,'Address':'BBSR'}
+>>> type(d)
+<class 'dict'>
+>>> d1 = {'Name':'Raza','Age':28,'Address':'BBSR','Post':'Salepur'}
+
+data= [
+    {'Name':'Krishna','Age':25,'Address':'BBSR'},
+    {'Name':'Raza','Age':28,'Address':'BBSR','Post':'Salepur'}
+]
+
+
+>>> d = {'Name':'Krishna','Age':25,'Address':'BBSR'}
+>>> dir(d)
+['clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+
+
+clear:- remove all the key, value pair from the dictionary.
+
+>>> d = {'Name':'Krishna','Age':25,'Address':'BBSR'}
+>>> d.clear()
+>>> d
+{} :- empty {} means always dictionary, not set
+>>> 
+
+Methods:-
+
+'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values'
+
+>>> #clear:- create a empty dictionary
+>>> d = {'Name':'Krishna','Age':25}
+>>> d.clear()
+>>> d
+{}
+>>> #copy:- copy one variable data to another one
+>>> d = {'Name':'Krishna','Age':25}
+>>> b = d.copy()
+>>> b
+{'Name': 'Krishna', 'Age': 25}
+>>> type(b)
+<class 'dict'>
+>>> 
+>>> #get :- call the key and it's return the values
+>>> d = {'Name':'Krishna','Age':25}
+>>> d.get('Name')
+'Krishna'
+>>> d.get('Age')
+25
+>>> 
+>>> #items:- Return a tuple pair of key and value
+>>> d = {'Name':'Krishna','Age':25}
+>>> d.items()
+dict_items([('Name', 'Krishna'), ('Age', 25)])
+>>> 
+>>> 
+>>> #keys:- Return only key of the dictionary
+>>> d = {'Name':'Krishna','Age':25}
+>>> d.keys()
+dict_keys(['Name', 'Age'])
+>>> 
+>>> 
+>>> #values :- Return only values of the dictionary
+>>> d = {'Name':'Krishna','Age':25}
+>>> d.values()
+dict_values(['Krishna', 25])
+>>> 
+>>> 
+>>> #fromkeys:-
+>>> li = ['Aman','Chimany','Dhal','Kapoor']
+>>> math_marks = 86
+>>> 
+>>> new_dictionary = dict.fromkeys(li,math_marks)
+>>> new_dictionary
+{'Aman': 86, 'Chimany': 86, 'Dhal': 86, 'Kapoor': 86}
+>>> 
+>>> 
+>>> 
+>>> #pop():- delete the key-value pair using help of key.
+>>> d = {'Name':'Krishna','Age':25,'Address':'BBSR','Post':'Khandagiri'}
+>>> d.pop('Address')
+'BBSR'
+>>> d
+{'Name': 'Krishna', 'Age': 25, 'Post': 'Khandagiri'}
+>>> 
+>>> 
+>>> #popitem():- delete the key-value pair ramdomly.
+>>> d = {'Name':'Krishna','Age':25,'Address':'BBSR','Post':'Khandagiri'}
+>>> d.popitem()
+('Post', 'Khandagiri')
+>>> d
+{'Name': 'Krishna', 'Age': 25, 'Address': 'BBSR'}
+>>> 
+>>> 
+>>> #setdefault:- add a new key-value in dictionary.
+>>> d = {'Name':'Krishna','Age':25}
+>>> d.setdefault('Address','BBSR')
+'BBSR'
+>>> d
+{'Name': 'Krishna', 'Age': 25, 'Address': 'BBSR'}
+>>> '
+SyntaxError: EOL while scanning string literal
+>>> 
+>>> #update:- Update the dictionary or add one to more key-value pair in dictionary
+>>> 
+>>> d = {'Name':'Krishna','Age':25}
+
+>>> d.update({'Address':'BBSR','Post':'Khandagiri','Ph_no':9876543334})
+>>> d
+{'Name': 'Krishna', 'Age': 25, 'Address': 'BBSR', 'Post': 'Khandagiri', 'Ph_no': 9876543334}
+>>> 
+
+
+
+None:- If a function or class doing nothing then it's return None.
+
+def f1():
+    a = 10
+
+print(f1())
+
+Op:- None

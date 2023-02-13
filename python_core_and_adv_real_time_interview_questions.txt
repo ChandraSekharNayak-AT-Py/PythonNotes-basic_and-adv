@@ -1,0 +1,111 @@
+
+Tech-1
+
+Name
+Year Exp
+Strong Area
+Domian
+Techlogy
+
+Last Project Name
+Roles and Res.
+
+
+Python:-
+
+Function:-
+---------
+
+1.Lambda --- write
+2.Decorater ---
+3.Generator ----
+4.Variable length of args
+5.continue vs break vs pass
+6.filter()
+7. return vs yield
+
+
+File Handeling:-
+---------------
+Open Function with Read
+Open Function with readlines
+
+Exception:-
+try and except ko likh ke dikho.
+and what is final
+
+Class:-
+------
+please define what is python oops
+
+class
+constructor
+3 variables
+3 methods
+Inheritance
+
+2. constructor vs method
+3. what is self.
+4. ATM Machine oops
+
+
+Module:-
+------
+1.py vs .pyc
+2.module vs packages
+3.packages arch.
+
+
+
+Core Python :-
+--------------
+Data Type:-
+--------
+1.List vs tuple
+2.Mutable vs Immutable
+3.set vs dict
+4. what is list comprehension and write it.
+5. what is slicing
+6. do string slicing
+
+Flow Control:-
+------------
+1. for and if  parctice properlly.
+
+> Prime Number
+> Fibanaci Series
+> Factorial with for loop.
+> Triangle patter
+> list mein smallest number and alrgest with using inbuit function
+> how to interchange two interger variable a = 2 , b = 1 :- bitwise
+a = 10
+b = 20
+
+a = a^b
+b = a^b
+a = a^b
+print('a:-',a)
+print('b:-',b)
+
+> Nested for
+
+> Type casting
+
+
+https://www.blazemeter.com/blog/cicd-pipeline-jenkins-github --- CI/CD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

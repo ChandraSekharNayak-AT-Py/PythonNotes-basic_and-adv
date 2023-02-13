@@ -1,0 +1,99 @@
+				Python's Object Oriented Programming (OOPs)
+
+
+What is Class: 
+
+⚽ In Python every thing is an object. To create objects we required some Model or Plan or Blueprint, which is nothing but class.
+⚽ We can write a class to represent properties (attributes) and actions (behaviour) of object.
+⚽ Properties can be represented by variables
+⚽ Actions can be represented by Methods.
+⚽ Hence class contains both variables and methods.
+
+
+How to Define a class?
+
+We can define a class by using class keyword. 
+Syntax:
+class className:
+ ''' documenttation string '''
+ variables:instance variables,static and local variables
+ methods: instance methods,static methods,class methods
+Documentation string represents description of the class. Within the class doc string is always 
+optional. We can get doc string by using the following 2 ways.
+1. print(classname.__doc__)
+2. help(classname)
+Example:
+1) class Student: 
+2) ''''' This is student class with required data''' 
+3) print(Student.__doc__) 
+4) help(Student) 
+Within the Python class we can represent data by using variables. 
+There are 3 types of variables are allowed. 
+1. Instance Variables (Object Level Variables)
+2. Static Variables (Class Level Variables)
+3. Local variables (Method Level Variables)
+
+Within the Python class, we can represent operations by using methods. The following are various 
+
+types of allowed methods
+------------------------
+ 
+
+1. Instance Methods
+2. Class Methods 
+3. Static Methods
+
+Example for class:
+1) class Student: 
+2) '''''Developed by Krishna for python demo''' 
+3) 	  def __init__(self): 
+		 self.name='Krishna' 
+5) 		 self.age=40 
+6) 		 self.marks=80 
+
+8) def talk(self): 
+9) 		print("Hello I am :",self.name) 
+10) 	print("My Age is:",self.age) 
+11) 	print("My Marks are:",self.marks) 
+
+
+
+What is Object:
+
+Pysical existence of a class is nothing but object. We can create any number of objects for a class.
+Syntax to create object: referencevariable = classname()
+Example: s = Student()
+
+
+What is Reference Variable:
+
+The variable which can be used to refer object is called reference variable.
+By using reference variable, we can access properties and methods of object.
+Program: Write a Python program to create a Student class and Creates an object to it. Call the 
+
+method talk() to display student details
+
+
+1) class Student: 
+2) 
+	  def __init__(self,name,rollno,marks): 
+		 self.name=name 
+	5) 	 self.rollno=rollno 
+	6)   self.marks=marks 
+7) 
+8) def talk(self): 
+9)    print("Hello My Name is:",self.name) 
+10)   print("My Rollno is:",self.rollno) 
+11)   print("My Marks are:",self.marks) 
+12) 
+ 
+
+13) s1=Student("Krishna",101,80) 
+14) s1.talk() 
+
+Output:
+
+Hello My Name is: Krishna
+My Rollno is: 101
+My Marks are: 80
+ 

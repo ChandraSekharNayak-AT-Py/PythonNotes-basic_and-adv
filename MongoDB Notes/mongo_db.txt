@@ -1,0 +1,178 @@
+Document Database
+------------------
+A record in MongoDB is a document, which is a data structure composed of field and value pairs. 
+MongoDB documents are similar to JSON objects. The values of fields may include other documents, arrays,
+and arrays of documents.
+
+{
+"Name":"Krishna",                                             field:value
+"Age":24,
+"Address":"BBSR"
+"Lang":["Python","Java","Golang","R","Rubby"]
+}
+
+Collections/Views/On-Demand Materialized Views
+MongoDB stores documents in collections. Collections are analogous to tables in relational databases.
+
+What is MongoDB?
+MongoDB is a document database designed for ease of application development and scaling.
+
+Run MongoDB with
+
+MongoDB Atlas fully managed in the cloud,
+the source available and free-to-use MongoDB Community, or
+the MongoDB Enterprise Advanced subscription.
+
+
+
+
+Model your data
+Design your data schema to support frequent access patterns. You can update or enforce your schema at any point.
+
+To learn more, see Data Modeling Introduction
+
+2
+Connect to MongoDB
+Import data from CSV or JSON files into your MongoDB database.
+
+To learn more, see MongoDB Shell (mongo)
+
+The MongoDB Shell versus the Legacy mongo Shell
+The new MongoDB Shell, mongosh, offers numerous advantages over the legacy mongo shell, such as:
+
+Improved syntax highlighting.
+Improved command history.
+Improved logging.
+Currently mongosh supports a subset of the mongo shell methods. Achieving feature parity between mongosh and the mongo shell is an ongoing effort.
+
+To maintain backwards compatibility, the methods that mongosh supports use the same syntax as the corresponding methods in the mongo shell. To see the complete list of methods supported by mongosh, see MongoDB Shell Methods.
+
+3
+Insert, query, update, or delete documents
+Use the MongoDB Query API to perform CRUD operations on your data - with or without transactions.
+
+To learn more, see MongoDB CRUD Operations
+
+
+Perform CRUD Operations
+CRUD operations create, read, update, and delete documents.
+
+Create Operations
+Create or insert operations add new documents to a collection. If the collection does not exist, create operations also create the collection.
+
+You can insert a single document or multiple documents in a single operation.
+
+For examples, see Insert Documents.
+
+Read Operations
+Read operations retrieve documents from a collection; i.e. query a collection for documents.
+
+You can specify criteria, or filters, that identify the documents to return.
+
+For examples, see Query Documents.
+
+Update Operations
+Update operations modify existing documents in a collection. You can update a single document or multiple documents in a single operation.
+
+You can specify criteria, or filters, that identify the documents to update. These filters use the same syntax as read operations.
+
+For examples, see Update Documents.
+
+Delete Operations
+Delete operations remove existing documents from a collection. You can remove a single document or multiple documents in a single operation.
+
+You can specify criteria, or filters, that identify the documents to remove. These filters use the same syntax as read operations.
+------------------------------Commands-----------------------------------------------------------------------------
+1. Database Commands
+View all databases
+show dbs
+
+
+Create a new or switch databases 
+use dbName
+
+
+View current Database
+db
+
+
+Delete Database 
+db.dropDatabase()
+
+2. Collection Commands
+show collections
+
+Create a collection named 'comments'
+db.createCollection('comments')
+
+Drop a collection named 'comments'
+db.comments.drop()
+
+3. Row(Document) Commands
+Show all Rows in a Collection 
+db.comments.find()
+
+Show all Rows in a Collection (Prettified)
+db.comments.find().pretty()
+
+Find the first row matching the object
+db.comments.findOne({name: 'Harry'})
+
+Insert One Row
+db.comments.insert({
+    'name': 'Harry',
+    'lang': 'JavaScript',
+    'member_since': 5
+ })
+
+Insert many Rows
+db.comments.insertMany([{
+    'name': 'Harry',
+    'lang': 'JavaScript',
+    'member_since': 5
+    }, 
+    {'name': 'Rohan',
+    'lang': 'Python',
+    'member_since': 3
+    },
+    {'name': 'Lovish',
+    'lang': 'Java',
+    'member_since': 4
+}])
+
+
+Search in a MongoDb Database
+db.comments.find({lang:'Python'})
+
+Limit the number of rows in output
+db.comments.find().limit(2)
+
+Count the number of rows in the output
+db.comments.find().count()
+
+Update a row
+db.comments.update({name: 'Shubham'},
+{'name': 'Harry',
+    'lang': 'JavaScript',
+    'member_since': 51
+}, {upsert: true})
+
+Mongodb Increment Operator
+db.comments.update({name: 'Rohan'},
+{$inc:{
+    member_since: 2
+}})
+Mongodb Rename Operator
+db.comments.update({name: 'Rohan'},
+{$rename:{
+    member_since: 'member'
+}})
+
+Delete Row 
+db.comments.remove({name: 'Harry'})
+
+Less than/Greater than/ Less than or Eq/Greater than or Eq
+db.comments.find({member_since: {$lt: 90}})
+db.comments.find({member_since: {$lte: 90}})
+db.comments.find({member_since: {$gt: 90}})
+db.comments.find({member_since: {$gte: 90}})

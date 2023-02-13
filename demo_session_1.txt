@@ -1,0 +1,24 @@
+Why Python?
+
+1.It's a scripting language(Oops L and Pops L)
+
+
+
+Python Application development:-
+
+
+Destop application
+Web application
+Mobile Application
+
+1.Front End(HTML,CSS,Java script,Jquery,Bootstarp)
+2.Back End(Python,Java,C,C++,Perl,R,Golang)
+3.Database(Osql,Plsql,Mysql,Pgsql,Sqlite3,Mongodb)
+
+
+Python:- Backend Process
+
+Development , Testing
+
+
+Python Basic and Adv, Selenium, Pytest and Unitest, Postman, MongoDB,Git,AWS Ec2

@@ -1,0 +1,89 @@
+Topics :- Python(Basic and Adv) + Selenium + Pytest and Unittest + Git + MongoDB
+
+
+Python:-
+-------------
+Introduction of Python
+
+Installing Python IDES – Python IDLE and Pycharm
+
+Data-types in Python
+
+Variables in Python – Declaration and Use
+
+Typecasting in Python
+
+Operators in Python – Assignment, Logical, Arithmetic etc.
+
+Taking User Input (Console)
+
+Conditional Statements – If else and Nested If else and elif
+
+Python Collections (Arrays) – List, Tuple, Sets and Dictionary
+
+Loops in Python – For Loop, While Loop & Nested Loops
+
+String Manipulation – Basic Operations, Slicing & Functions and Methods
+
+User Defined Functions – Defining, Calling, Types of Functions, Arguments
+
+Lambda Function
+
+Importing Modules – Math Module
+
+File Handeling
+
+Exception Handeling
+
+Regular Expression
+
+Logging
+
+Syllabus - Object Oriented Programming in Python
+
+Basics of Object Oriented Programming
+
+Creating Class and Object
+
+Constructors in Python – Parameterized and Non-parameterized
+
+Inheritance in Python
+
+In built class methods and attributes
+
+Multi-Level and Multiple Inheritance
+
+Method Overriding and Data Abstraction
+
+Encapsulation and Polymorphism
+------------------------------------------------
+
+
+Selenium:-
+--------
+
+Locators
+ What are locators
+ Types of locators
+ Examples of using Locators
+ Advantages and disadvantages of using locators
+GIT,Selenium Tool, Pytest and UnitTest lib.
+
+Web Driver Part-I
+ Introduction of Web Driver
+ Download & configuring Web driver
+ The architecture of selenium web driver
+ Drivers for Firefox, IE, chrome, I-phone, Android  First Selenium Code
+ Introduction to basic commands like get/navigate  Exception Handling in Selenium
+
+Web Driver Part-II
+ Working with web page elements/Controls o Dropdown
+
+o Listbox
+o Radio buttons
+o Multi-select box o Date picker
+o Combobox widget
+
+ Introducing wait – implicit and explicit wait
+ Handling different browsers – Firefox, Chrome and Internet Explorer browser  Taking screenshots
+ Handling Java script alerts, confirmations and prompts

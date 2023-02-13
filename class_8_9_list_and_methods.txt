@@ -1,0 +1,138 @@
+List:-
+If we want to represent a group of data in a single enity, where insertion order is preserved(Indexing) and Duplicated Values als0 allowed then we should go for list data. Always list datatype enclode in squre([]) bracket.
+
+1.Insertion Order is Preseved
+2.Hetrogenious objects are allowed
+3.Duplicates are allowed
+4.It's a mutable data type.(Growable in nature)
+5.Elements are enclode in [] squre bracket.
+6.Every elemnet separate with anothere element with the help of comma(,).
+
+Ex:-
+>>> l = [15,78,89.98,7+9j,True,'Ghhj',[78,90],15,15,15]
+>>> type(l)
+<class 'list'>
+>>> l.append(56765786)
+>>> l
+[15, 78, 89.98, (7+9j), True, 'Ghhj', [78, 90], 15, 15, 15, 56765786]
+>>> 
+
+>>> li = [10,20,30,40]
+>>> type(li)
+<class 'list'>
+>>> dir(li)
+['append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+
+>>> # append:- It's add the element in the last position of list. and it's add only one element.
+>>> 
+>>> li = [10,20,30,40]
+>>> li.append(50)
+>>> li
+[10, 20, 30, 40, 50]
+>>> 
+>>> #insert :- Insert the element of specified of postion of the list.
+>>> li = [10,20,30,40]
+>>> li.insert(2,25)
+>>> li
+[10, 20, 25, 30, 40]
+>>> 
+>>> #extend :- Add one list into a another list.
+>>> 
+>>> sec_a = ['Biki','Harshel','Rajesh']
+>>> sec_b = ['Rajkishore','Aman','Anupam']
+>>> 
+>>> sec_a.extend(sec_b)
+>>> sec_a
+['Biki', 'Harshel', 'Rajesh', 'Rajkishore', 'Aman', 'Anupam']
+>>> sec_b
+['Rajkishore', 'Aman', 'Anupam']
+>>> 
+>>> #index :- Return the  index of the first accurance , and it's return only original element.
+>>> 
+>>> li = [10,20,30,40,50,40,20,10,10]
+>>> li.index(50)
+4
+>>> li.index(20)
+1
+>>> 
+>>> #count :- calculate total accurance of the given element.
+>>> li = [10,20,30,40,50,40,20,10,10]
+>>> li.count(50)
+1
+>>> li.count(10)
+3
+>>> li.count(20)
+2
+>>> len(li)
+9
+>>> li.count(100)
+0
+>>> #copy():- copy the list one variable to another one
+>>> li = [89,78,67,90]
+>>> li_2 = li.copy()
+>>> li_2
+[89, 78, 67, 90]
+
+>>> 
+>>> #clear :- clear all the element
+>>> li = [56,89,76]
+>>> li.clear()
+>>> li
+[]
+>>> 
+>>> li = [10,20,30,40]
+>>> #pop:- delete the element in last position of list, and return the value
+>>> li = [10,20,30,40]
+>>> li.pop()
+40
+>>> 
+>>> li
+[10, 20, 30]
+>>> 
+
+>>> #remove:- delete the element in list specified postion
+>>> li = [10,20,30,40]
+>>> 
+>>> #remove:- Delete the element in the list, specified element. if duplicate element id their then delete first one then the next
+>>> li = [10,20,30,40,10,20,10]
+>>> li.remove(10)
+>>> li
+[20, 30, 40, 10, 20, 10]
+>>> li.remove(10)
+>>> li
+[20, 30, 40, 20, 10]
+>>> li.remove(10)
+>>> li
+[20, 30, 40, 20]
+>>> 
+>>> #reverse():- it's reverse the list.
+>>> li = [10,20,30,40]
+>>> li.reverse()
+>>> li
+[40, 30, 20, 10]
+>>> 
+>>> 
+>>> #sort():- sort the list accending to decending
+>>> li = [78,78.89,56,34,67.89,101,120,23,34,121]
+>>> li.sort()
+>>> li
+[23, 34, 34, 56, 67.89, 78, 78.89, 101, 120, 121]
+>>> #decending to accending
+>>> li = [78,78.89,56,34,67.89,101,120,23,34,121]
+>>> li.sort(reverse=True)
+>>> li
+[121, 120, 101, 78.89, 78, 67.89, 56, 34, 34, 23]
+>>> 
+>>> 
+>>> li= ['A','Z','a','c','S','s']
+>>> li.sort()
+>>> li
+['A', 'S', 'Z', 'a', 'c', 's']
+>>> li= ['A','Z','a','c','S','s',89,57,80]
+>>> li.sort()
+Traceback (most recent call last):
+  File "<pyshell#94>", line 1, in <module>
+    li.sort()
+TypeError: '<' not supported between instances of 'int' and 'str'
+

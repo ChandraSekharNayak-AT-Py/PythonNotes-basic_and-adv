@@ -1,0 +1,89 @@
+Function Decorator:-
+------------------
+
+Decorater is a function which can take a function as argument and extend its functionality and return modified function with extend functionality.
+
+
+
+  input function               new(add some functionality)
+-----------------> Decorate -------------------------------->
+	wish()                     decore/ineer() 
+
+
+The main advtange of decorator is we can extend the functionality of exitsing function without modify that function
+
+
+def moudification_cal(cal):
+    def inner(a,b):
+        mul = a*b
+        div = a/b
+        cal(a, b)
+        print('decore ka mul:-',mul,'decore ka div:-',div)
+    return inner
+
+@moudification_cal
+def cal(a,b):
+    sum = a+b
+    sub = a-b
+    print('main func ka sum:-',sum,'main func ka sub:-',sub)
+
+cal(10,20)
+
+op:- 
+main func ka sum:- 30 main func ka sub:- -10
+decore ka mul:- 200 decore ka div:- 0.5
+
+def decor(wish):
+    def inner(name):
+        if name == "Amiya":
+            print("Please donot come here")
+        else:
+            wish(name)
+    return inner
+
+@decor
+def wish(name):
+    print("Hello",name,"Good morning")
+
+wish('Prasana')
+wish('Amiya')
+
+
+Homework:-
+
+1.Try decorator from your side.
+2.Try decorator chaining once.
+
+
+Decorator Chaining:-
+------------------ 
+
+We can define multiple decorater for the some function and all the decorator with from decorator chaining.
+
+
+
+
+Generator:-
+--------
+
+Generator is a function which is responsible to generate a sequence of values.
+We can write generator function like odinary function, But it use yield word to return the values.
+
+It's return the value one by one so here we can use next() function
+
+def calculator(a,b):
+    sum = a+b
+    sub = a-b
+    mul = a*b
+    div = (a/b)
+    yield sum
+    yield sub
+    yield mul
+    yield div
+
+s = calculator(10,20)
+
+print(next(s))
+print(next(s))
+print(next(s))
+print(next(s))

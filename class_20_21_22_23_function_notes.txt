@@ -1,0 +1,369 @@
+                                      Functions:-
+                                      ---------
+If a group statements is repeatadly required then it's not recommended to write these statements everytime separetly, We have to define these statements as a single unit and we call that unit any number of times based on our
+requirement without rewriting the code. These single unit is called Function.
+
+
+Adv:- Reusabilty,Time consume, Length of code Reduce
+
+There are 2 types of Function in Python
+
+1.Inbuild Function :- 
+
+The function which are coming alsong with python s/w automatically are called inbuilt function.
+
+id()
+type()
+print()
+dir()
+help()
+bin()
+list()
+
+
+2.User Define Function:-
+
+The function which are developed by programmer explicitly according to the bussiness logic requirement are called user define function.
+
+
+syntax:-
+
+def function_name(parameters):
+	""" doc string """
+
+	------
+	------
+	------(business logic)
+	
+	return values
+
+
+In function use 2 keywords.
+
+1.def:- creating function
+2.return :- return value of logic
+--------------------------------------------
+def wish():
+    print("Good morning")
+
+#call the function
+
+wish()
+wish()
+wish()
+wish()
+
+ans:-
+Good morning
+Good morning
+Good morning
+Good morning
+
+
+ex:- 2
+
+
+def std_cal(a,b):
+    sum = a+b
+    sub = a-b
+    mul = a*b
+    div = a/b
+
+    print('sum:-',sum,'sub:-',sub,'mul:-',mul,'div:-',div)
+
+std_cal(20,10)
+std_cal(56,12)
+std_cal(89,34)
+
+
+ans:-
+
+sum:- 30 sub:- 10 mul:- 200 div:- 2.0
+sum:- 68 sub:- 44 mul:- 672 div:- 4.666666666666667
+sum:- 123 sub:- 55 mul:- 3026 div:- 2.6176470588235294
+
+
+Parameters:-
+----------
+
+Parameters are inputs to the fucntion. If a functions contains parametes then at the time of calling compulsory we should provide values, otherwise we will get error.
+
+Note:- If you provide two parameters, at the time of calling you must be provide two parametes as per value, One less or extra not required.
+
+def std_cal(a,b):
+    sum = a+b
+    sub = a-b
+    mul = a*b
+    div = a/b
+
+    print('sum:-',sum,'sub:-',sub,'mul:-',mul,'div:-',div)
+
+std_cal()
+
+Note:- Paramete want two, but at the time calling it's empty.
+
+error :- TypeError: std_cal() missing 2 required positional arguments: 'a' and 'b'
+
+----------------------------------------------------
+def std_cal(a,b):
+    sum = a+b
+    sub = a-b
+    mul = a*b
+    div = a/b
+
+    print('sum:-',sum,'sub:-',sub,'mul:-',mul,'div:-',div)
+
+std_cal(67)
+Note:- Paramete want two, but at the time calling it's just 1.
+
+error:- TypeError: std_cal() missing 1 required positional argument: 'b'
+---------------------------------------
+def std_cal(a,b):
+    sum = a+b
+    sub = a-b
+    mul = a*b
+    div = a/b
+
+    print('sum:-',sum,'sub:-',sub,'mul:-',mul,'div:-',div)
+
+std_cal(67,89,90)
+
+error:- TypeError: std_cal() takes 2 positional arguments but 3 were given
+
+#addition function:-
+
+# def additional_func(a,b):
+#     add = a+b
+#     return add
+#
+# print(additional_func(10,20))
+# print(additional_func(78,90))
+
+# def even_odd(num):
+#     if num%2==0:
+#         print('even')
+#     else:
+#         print('odd')
+#
+# even_odd(5)
+# even_odd(50)
+
+# def even_odd(a):
+#     if a%2==0:
+#         print('even')
+#     else:
+#         print('odd')
+#
+# even_odd(67)
+# even_odd(89)
+# even_odd(90)
+
+# def factorial(num):
+#     res = 1
+#     while num>=1:
+#         res = res*num
+#         num = num-1
+#     return res
+#
+
+# def skip_even(li):
+#     odd_list = []
+#     for i in li:
+#         if i%2 ==0:
+#             continue
+#         odd_list.append(i)
+#     return odd_list
+
+
+Types Of arguments or parameters
+--------------------------------
+
+def func(a,b): ----- formal arg/parameter
+    body
+
+
+func(10,20) ---- actual arg/argumets
+
+a,b are formal arguments are 10.20 are actual argumets
+
+There are 4 types of arguments are avialable.
+
+
+1.Positional Arguments
+2.Keyword Arguments
+3.Default Arguments
+4.Variable length Arguments
+
+1.Positional Arguments:-
+
+These are the arguments passed to function in correct positional order
+
+def add(a,b):
+    result = a+b
+    return result
+
+print(add(40,10))
+
+The number of arguments and postion of arguments must be matched. If we change the order we will get other result.
+
+if the number arguments not matched then we will get error.
+
+
+Keyword Arguments:-
+------------------
+
+We can pass arguments values by keyword that is parameter name.
+
+def wish(name,msg):
+    print('Hello',name,msg)
+
+#wish('Good morning','Krishna')
+wish(msg = 'Good morning',name ='Krishna')
+
+ans:- Hello Krishna Good morning
+
+
+
+
+>> We can use positional and Keyword simultaneously but we need to use first positional then keyword.
+def wish(name,msg,div):
+    print('Hello',name,msg)
+
+
+wish(msg = 'Good morning',name ='Krishna','great')
+
+
+
+ans:- SyntaxError: positional argument follows keyword argument
+
+Positiona+Keyword
+
+def wish(name,msg,div):
+    print('Hello',name,msg,div)
+
+
+wish('krishna',msg = 'Good morning',div ='well')
+
+ans:- Hello krishna Good morning well
+
+
+3. Default arguments:-
+---------------------
+
+Sometimes we can provide default values for our positional arguments.
+
+def wish(name='Guest',msg = 'Good evening'):
+    print("Hello",name,"Plz welcome",msg)
+
+wish("Patel Uncle")
+wish("Gaiwad Uncle")
+wish()
+
+
+ans:-
+
+Hello Patel Uncle Plz welcome Good evening
+Hello Gaiwad Uncle Plz welcome Good evening
+Hello Guest Plz welcome Good evening
+
+
+4. Variable length arguamnets:
+
+>variable length
+> keyword variable length
+
+Sometime we can pass variable length of arguments to our function, such type of arguments are called variable length of arguments
+
+we can declare a variable length of arguments with the help (*) symbol.
+
+ex:-
+
+def func_name(*para):
+    -----\
+    -----\
+
+we can call this function by passing any number of arguments including zero number.
+Note:- Internally all these values represented in the form of tuple.
+
+ex:-
+def cal(*num):
+    total = 0
+    mul = 1
+    for i in num:
+        total = total+i
+        mul = mul*i
+    print('sum',total)
+    print('mul',mul)
+
+cal(1,2,3,4,5,6,7,90)
+
+Keyword Variable length Of arguments:-
+------------------------------------
+
+When we pass both key and value in a nth parameter,We will use Keyword Variable length Of arguments.
+
+we can declare a keyword variable length of arguments with the help (**) symbol.
+
+def func_name(**n):
+
+variable length :- *args
+keyword V  L    :- **kwargs
+
+we can call this function by passing any number of keyword arguments.
+Note:- Internally all these values represented in the form of dictionary.
+
+ex:-
+d = {"Name":"Rutuja","Address":"Pune"}
+
+for i,j in d.items():
+    print(i,j)
+
+ex:-
+
+def display(**kwargs):
+    for k,v in kwargs.items():
+        print(k,':',v)
+
+display(Name = 'Rutuja', Address= 'Pune', Batch = 'T_39',sis_name= 'Rutuja')
+
+ans:-
+
+Name : Rutuja
+Address : Pune
+Batch : T_39
+sis_name : Rutuja
+
+#Variable Length Of Arguments:-
+
+# def addition(*n):
+#     sum = 0
+#     for i in n:
+#         sum = sum + i
+#     print(sum)
+#
+# addition(67,89,43,21,89)
+
+# def bus(*args):
+#
+#     for i in name:
+#         if i[0]  == i[0].upper():
+#             a = i[0].lower()
+#             print(i.replace(i[0],a))
+#
+#         elif i[0] == i[0].lower():
+#             a = i[0].upper()
+#             print(i.replace(i[0],a))
+#
+#
+# bus('Aman','chinmay','Alok','bidya','viki','Bana','Rajesh')
+
+# zip(),sorted()
+
+#keyword variable length of arguments
+
+# def dictionary_type(**kwargs):
+#     # print(type(kwargs))
+#     for k,v in kwargs.items():
+#         print(k,v)
+#
+# dictionary_type(name= 'Bana', age = 23, salary=40000)

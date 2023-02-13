@@ -1,0 +1,53 @@
+Input and Output statement:-
+--------------------------
+
+input:- input is function which is takes data from user end and it's take only string type of data.
+
+ex:-
+
+a = input('Enter your number:-')
+Enter your number:-56
+a
+'56'
+type(a)
+<class 'str'>
+
+we need type casting method type cast the str to other data type.
+
+a = int(input('Enter your number:-'))
+Enter your number:-12
+a
+12
+type(a)
+<class 'int'>
+
+a = float(input('Enter your number:-'))
+Enter your number:-56.89
+type(a)
+<class 'float'>
+a
+56.89
+
+
+eval():- eval function take a string and evalute the result and return
+
+a = eval(input('Enter your number:-'))
+Enter your number:-98
+type(a)
+<class 'int'>
+
+a = eval(input('Enter your number:-'))
+Enter your number:-7+8j
+type(a)
+<class 'complex'>
+
+
+
+Output:- using print we provide data for user's data validation.
+
+a = int(input('Enter your number:-'))
+Enter your number:-67
+print(a)
+67
+
+Pycharm download :- https://www.jetbrains.com/pycharm/download/#section=windows

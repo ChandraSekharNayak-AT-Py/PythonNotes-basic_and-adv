@@ -1,0 +1,14 @@
+Reserved words:-
+--------------
+
+In python some words are reserved to represent some meaning or functionality, such type of words are called reserved words or keywords.
+
+In python there are 35 reserved word avialable.
+
+>>> import keyword
+>>> keyword.kwlist
+['False', 'None', 'True', '__peg_parser__', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+Note:- before python 3.6 33 keywords are avialable.
+
+This two is new keyword :- 'async', 'await'

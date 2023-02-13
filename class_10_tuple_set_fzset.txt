@@ -1,0 +1,156 @@
+Tuple:-
+A tuple is a collection of python objects separated by comma , In someways a tuple is a similar to alistin terms of indexing, but tuple is immutable , we can not change the tuple data type elements. Tuple is enclosed by parenthsis :- ()
+
+1.Insertion Order is Preseved
+2.Hetrogenious objects are allowed
+3.Duplicates are allowed
+4.It's a Immutable data type.
+5.Elements are enclode in () parenthsis bracket.
+6.Every elemnet separate with anothere element with the help of comma(,).
+
+ex:-
+
+>>> tup = (10,20,67.89,8+9j,'gyjh',[67,89],(67,54))
+>>> type(tup)
+<class 'tuple'>
+
+'count', 'index']
+
+
+Home:-
+
+List vs Tuple
+mutalbe vs immtable
+
+
+
+
+Set:-
+
+A set is a collecition where insertion not follwed by collection, indexing not matter and duplicate data also not allowed, it's enclosed {} bracket, then we should go for set.
+
+1.Insertion Order is Not Preseved
+2.Hetrogenious objects are allowed
+3.Duplicates are Not allowed
+4.It's a mutable data type.
+5.Elements are enclode in {}  bracket.
+6.Every elemnet separate with anothere element with the help of comma(,).
+
+
+>>> 
+>>> se = {10,78,9+8j,'QWERTy',(78,45),10,10,78,78}
+>>> type(se)
+<class 'set'>
+>>> se
+{(9+8j), 'QWERTy', 10, (78, 45), 78}
+>>> 
+>>> dir(se)
+[, 'add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union', 'update']
+>>> 
+
+>>> #add():- Add an element to the set
+>>> 
+>>> se ={78,45,'iyi',80}
+>>> se.add('biswa')
+>>> se
+{'iyi', 45, 'biswa', 78, 80}
+>>> 
+>>> #clear():- Remove all the element from the set
+>>> se ={78,45,'iyi',80}
+>>> se.clear()
+>>> se
+set()
+>>> 
+>>> 
+>>> #copy():- Copy one variable to another variable.
+>>> se ={78,45,'iyi',80}
+>>> tq = se.copy()
+>>> tq
+{80, 45, 'iyi', 78}
+>>> 
+>>> 
+>>> #difference:- Return a set that contains the item that only exits in the set.
+>>> a = {1,2,3,4,5}
+>>> b = {4,5,6,7,8}
+>>> a.difference(b)
+{1, 2, 3}
+>>> b.difference(a)
+{8, 6, 7}
+>>> 
+>>> 
+>>> #intersection:- Return a set, That is the intersection(commaon area) of the two set.
+>>> a = {1,2,3,4,5}
+>>> b = {4,5,6,7,8}
+>>> a.intersection(b)
+{4, 5}
+>>> 
+>>> 
+>>> #discard():- Remove any element from the set
+>>> se ={78,45,'iyi',80}
+>>> se.discard(45)
+>>> se
+{80, 'iyi', 78}
+>>> #remove == discard
+>>> se ={78,45,'iyi',80}
+>>> se.remove(45)
+>>> se
+{80, 'iyi', 78}
+>>> 
+>>> #pop:- Remove the element from the set, but as per his wish
+>>> se ={78,45,'iyi',80}
+>>> se.pop()
+80
+>>> 
+>>> 
+>>> #union:- Return the set containing union(two set in one) of both the set.
+>>> 
+>>> a = {1,2,3,4,5}
+>>> b = {4,5,6,7,8}
+>>> a.union(b)
+{1, 2, 3, 4, 5, 6, 7, 8}
+>>> 
+>>> 
+>>> #update:- add a set into a anothers set.
+>>> 
+>>> name = {'Akshya','Rupesh','Kanha'}
+>>> age = {45,89,67}
+>>> name.update(age)
+>>> name
+{'Kanha', 67, 89, 'Akshya', 'Rupesh', 45}
+>>> 
+
+Type Casting:-
+------------
+we can covert one data type to another datatype, this we will use type casting.
+
+1.int()
+2.float()
+3.complex()
+4.bool()
+4.str()
+
+>>> a = 1
+>>> type(a)
+<class 'int'>
+>>> float(a)
+1.0
+>>> complex(a)
+(1+0j)
+>>> bool(a)
+True
+>>> str(a)
+'1'
+>>> 
+
+
+
+Frozenset:-
+It's exactly same as set except that it is immutable.
+For Frozenset no symbol is there, we can create a frozen set the help type casting(list,tuple,set)
+
+>>> li = [89,90,78]
+>>> fz = frozenset(li)
+>>> fz
+frozenset({89, 90, 78})
+>>> type(fz)
+<class 'frozenset'>

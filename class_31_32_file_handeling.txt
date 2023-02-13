@@ -1,0 +1,134 @@
+The with statement:
+The with statement can be used while opening a file.We can use this to group file 
+operation statements within a block.
+The advantage of with statement is it will take care closing of file,after completing all 
+operations automatically even in the case of exceptions also, and we are not required to 
+close explicitly.
+Eg:
+1) with open("abc.txt","w") as f: 
+2) 	f.write("Chandra\n") 
+3) 	f.write("Sekhar\n") 
+4) 	f.write("Nayak\n") 
+5) 	print("Is File Closed: ",f.closed) 
+6) print("Is File Closed: ",f.closed) 
+7) 
+8) Output
+9) Is File Closed: False 
+10) Is File Closed: True 
+The seek() and tell() methods:
+tell():
+==>We can use tell() method to return current position of the cursor(file pointer) from 
+beginning of the file. [ can you plese telll current cursor position]
+The position(index) of first character in files is zero just like string index.
+Eg:
+1) f=open("abc.txt","r") 
+2) print(f.tell()) 
+3) print(f.read(2)) 
+4) print(f.tell()) 
+5) print(f.read(3)) 
+6) print(f.tell()) 
+abc.txt:
+sunny
+bunny
+chinny
+vinny
+
+Output:
+0
+su
+2
+nny
+5
+seek():
+We can use seek() method to move cursor(file pointer) to specified location.
+[Can you please seek the cursor to a particular location]
+f.seek(offset, fromwhere)
+offset represents the number of positions
+The allowed values for second attribute(from where) are
+0---->From beginning of file(default value)
+1---->From current position
+2--->From end of the file
+Note: Python 2 supports all 3 values but Python 3 supports only zero.
+Eg:
+1) data="All Students are STUPIDS" 
+2) f=open("abc.txt","w") 
+3) f.write(data) 
+4) with open("abc.txt","r+") as f: 
+5) text=f.read() 
+6) print(text) 
+7) print("The Current Cursor Position: ",f.tell()) 
+8) f.seek(17) 
+9) print("The Current Cursor Position: ",f.tell()) 
+10) f.write("GEMS!!!") 
+11) f.seek(0) 
+12) text=f.read() 
+13) print("Data After Modification:") 
+14) print(text) 
+15) 
+16) Output
+17) 
+18) All Students are STUPIDS 
+19) The Current Cursor Position: 24 
+20) The Current Cursor Position: 17 
+21) Data After Modification:
+
+
+
+#Handeling Binary Data:-
+
+It is very common requirement to read or write binary data like images,video files,audio 
+files etc
+
+# img_2 = open('D:\\SCODEEN\\T_39E_40\\File_Handeling\\signature.jpg','rb')
+# read_img_2 = img_2.read()
+# print(read_img_2)
+#
+#
+# img_1 = open('D:\\SCODEEN\\T_39E_40\\File_Handeling\\cs_nayak.jpg','wb')
+# img_1.write(read_img_2)
+
+
+
+
+
+Handling csv files:
+CSV==>Comma seperated values
+As the part of programming,it is very common requirement to write and read data wrt csv 
+files. Python provides csv module to handle csv files.
+Writing data to csv file:
+1) import csv 
+2) with open("emp.csv","w",newline='') as f: 
+3) w=csv.writer(f) # returns csv writer object 
+4) w.writerow(["ENO","ENAME","ESAL","EADDR"]) 
+5) n=int(input("Enter Number of Employees:")) 
+6) for i in range(n): 
+7) eno=input("Enter Employee No:") 
+8) ename=input("Enter Employee Name:") 
+9) esal=input("Enter Employee Salary:") 
+10) eaddr=input("Enter Employee Address:") 
+11) w.writerow([eno,ename,esal,eaddr]) 
+12) print("Total Employees data written to csv file successfully") 
+Note: Observe the difference with newline attribute and without
+with open("emp.csv","w",newline='') as f:
+with open("emp.csv","w") as f:
+
+
+Reading Data from csv file:
+1) import csv 
+2) f=open("emp.csv",'r') 
+3) r=csv.reader(f) #returns csv reader object 
+4) data=list(r) 
+5) #print(data) 
+6) for line in data: 
+7) for word in line: 
+8) print(word,"\t",end='') 
+9) print() 
+10) 
+11) Output
+12) D:\Python_classes>py test.py 
+
+ENumber 	EName 	ESalary 	EAddress 	
+101 	    Ajay 	 67000 	     Pune 	
+102 	    Bijay 	 87000 	     Mumbai 	
+102 	    Yukti 	 78000 	     Chandigarh 	
+104 	    Rauk 	 67889 	     Kolkata 	

@@ -1,0 +1,95 @@
+Identifiers:-
+------------
+
+A name is python is called identifier.
+It can be class name or function name or module name or variable name
+
+
+what is variable?
+
+where we store or hold data, it's know as variable.
+
+ex:- math_marks = 87
+
+
+Rule to define identifiers in python:-
+-------------------
+
+1.The only allowed charcters are :-
+	> Upper case and Lower case
+	> 0 to 9 (digits)
+	> underscore symbol(_)
+
+2.indentifiers should not start with digits.
+
+ex:- 
+
+>>> A1 = 56
+>>> a1 = 56
+>>> _a1 = 56
+
+>>> 1A = 56
+SyntaxError: invalid syntax
+>>> 
+
+3.Python is a case sensitive language, so that python identifier also case sensitive.
+
+>>> Result = 100
+>>> result
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    result
+NameError: name 'result' is not defined
+>>> 
+>>> Result
+100
+>>> 
+>>> REsult
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    REsult
+NameError: name 'REsult' is not defined
+>>> 
+
+Note:- There are no length limit for python identifier, But not recommenede to use too lengthy name, Plaese follow the bussines logical name.
+
+
+Casing:- Pep8
+
+
+Camel Casing:- (ClassName,ModuleName and FolderName)
+
+Use :- Upeercase and Lowercase
+
+Every word of first char should be upper case and rest all of these are lower.
+
+STATE BANK OF INDIA :-
+
+StateBankOfIndia
+
+
+
+
+Snake Casing:- (function name, variable_name,file_name)
+
+User:- Lower,digits and underscore(_)
+
+STATE BANK OF INDIA :-
+
+all are use only lower case, in between every words use underscore(_) only.
+
+state_bank_of_india_00108
+
+
+Underscore:-
+
+state_bank_of_india_00108 = 10  (Normal Variable)
+
+>>single underscore in fornt of variable
+
+_state_bank_of_india_00108 = 10 (Procted variable)
+
+>>double underscore in fornt of variable
+
+__state_bank_of_india_00108 = 10 (Private Variable)
+

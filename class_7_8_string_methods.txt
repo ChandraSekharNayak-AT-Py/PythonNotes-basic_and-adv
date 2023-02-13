@@ -1,0 +1,197 @@
+String Methods:-
+--------------
+using dir() we know the data's methods.
+
+>>> s = "bengaluru"
+>>> dir(s)
+['capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> s.capitalize()
+
+Link :- https://www.w3schools.com/python/python_ref_string.asp :- string Method ka all info
+
+How to use methods
+--------------
+
+using dot(.) format, we will use all data type methods.
+
+>>> s = "bengaluru"
+>>> s.capitalize()
+'Bengaluru
+
+if methods not avialabe in data
+
+>>> s.jhgyuh()
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    s.jhgyuh()
+AttributeError: 'str' object has no attribute 'jhgyuh'
+>>> 
+
+
+Important:-
+
+1. capitalize():- Convert Upper case the first char of string.
+
+>>> s = "bengaluru"
+>>> s.capitalize()
+'Bengaluru'
+
+
+2. lower():- If in your string any char is in upper, it's ,convert to lower.
+
+>> s = "Harishnakar"
+>>> s.lower()
+'harishnakar'
+>>> 
+
+3. upper():- If in your string any char is in lower, it's ,convert to upper.
+
+>>> s = "Harishnakar"
+>>> s.upper()
+'HARISHNAKAR'
+>>> 
+
+4.swapcase():- Vice-Versa upper to lower and lower to upper.
+
+>>> s = 'Abhay Is a Good Boy'
+>>> s.swapcase()
+'aBHAY iS A gOOD bOY'
+
+
+3. endswith():- Return True if the string end with spcified value.
+
+>>> Ip = '192.168.0.0'
+>>> Ip.endswith('0')
+True
+>>> Ip.endswith('9')
+False
+
+
+4. startswith():- Return True if the string start with spcified value.
+
+>>> Ip = '192.168.0.0'
+>>> Ip.startswith('1')
+True
+>>> Ip.startswith('2')
+False
+>>> 
+
+
+
+6.index():- It's search the position of sub string in a string. If any sub string is not there it's return the Error.
+
+>>> S.index('Z')
+Traceback (most recent call last):
+  File "<pyshell#44>", line 1, in <module>
+    S.index('Z')
+ValueError: substring not found
+
+7.find():- It's search the position of sub string in a string. If any sub string is not there it's return the -1.
+>>> S.find('Z')
+-1
+-----------------  find and index
+
+>>> s = 'Bhubaneswar'
+>>> s.find('u')
+2
+>>> s.find('r')
+10
+>>> s.find('a')
+4
+>>> s.find('ar')
+9
+>>> S ='Ab aB Ac Ad Dc Ac Dk'
+>>> s.find('A')
+-1
+>>> S.find('A')
+0
+>>> S.find('Ac')
+6
+>>> S.find('Ac D')
+15
+>>> S.find('Z')
+-1
+>>> 
+>>> 
+>>> S.index('A')
+0
+>>> S.index('Ac D')
+15
+>>> s.index('r')
+10
+>>> 
+
+8.count():- Return the number of time a specified value accures in a string.
+
+>>> s= 'I love apple, apple is best'
+>>> len(s) #(Count the how many number sub string in a string)
+27
+>>> s.count('a)
+	
+SyntaxError: EOL while scanning string literal
+>>> s.count('a')
+2
+>>> s.count('e')
+4
+>>> s.count('apple')
+2
+>>> 
+
+9.strip():- It's remove unnessary white space right and left side from the string
+
+ex:-
+>>> s = '    Chandra'
+>>> s.strip()
+'Chandra'
+>>> s = '    Chandra     '
+>>> s.strip()
+'Chandra'
+>>> 
+
+
+10.split():- The split() method split the string into substring , it it's find common seprater
+
+>>> s = 'Abhiman Abhilash Abhilipsa Abhishek'
+>>> s.split(' ')
+['Abhiman', 'Abhilash', 'Abhilipsa', 'Abhishek']
+>>> s = 'AbhimanAbhilashAbhilipsaAbhishek'
+
+
+11.join():- join the substring from list and convert into a complete string
+
+>>> Name = ['Chandra','Sekhar','Nayak']
+>>> s = ' '.join(Name)
+>>> s
+'Chandra Sekhar Nayak'
+
+13.format():- The format is a method which is useing placeholder, where you need a add new substring
+
+>>> s = 'Abhiman{}Abhilash{}Abhilipsa{}Abhishek'
+>>> s.format('/','/','/')
+'Abhiman/Abhilash/Abhilipsa/Abhishek'
+>>> s.split('/')
+['Abhiman{}Abhilash{}Abhilipsa{}Abhishek']
+>>> s = s.format('/','/','/')
+>>> s.split('/')
+['Abhiman', 'Abhilash', 'Abhilipsa', 'Abhishek']
+
+
+14.replace():- Replace a string into a another string
+
+
+>>> s = "Ji Krishna"
+>>> s.replace('J','H')
+'Hi Krishna'
+>>> s = "Ji Jony"
+>>> s.replace('J','H')
+'Hi Hony'
+>>> s.replace('Ji','Hi')
+'Hi Jony'
+
+
+Homework:- String HM:- Question 1,2,4 
+Link:- https://www.w3resource.com/python-exercises/string/
+
+
+
+

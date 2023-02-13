@@ -1,0 +1,113 @@
+Data Types:-
+---------
+
+Data Type represents the type of data present inside a variable.
+In python we are not required to specify the data type data, couse pythion dynamic typed of laguages.
+
+
+There are 14 types of Data are avialable.
+
+1. Integer :- int()
+2. Float   :- float()
+3. Complex :- complex()
+4. Boolean :- bool()
+5. String  :- str()
+6. List    :- list()
+7. Tuple   :- tuple()
+8. Set     :- set()
+9. Frozentset :- frozenset()
+10. Bytes   :- bytes()
+11. Bytearray :- bytearray()
+12. Range   :- range()
+13. Dictionary :- dict()
+14. None        
+
+
+Relation between data and variable.
+
+1. When we assign the data in variable, variable should be access all the fixture of data.
+2. In variable we can change the as per user wish.
+
+
+>>> a = 10
+>>> id(a)
+1548045347408
+>>> a = 20
+>>> id(a)
+1548045347728
+>>> 
+
+
+Python Inbuild Basic Functions:-
+
+type():- type of data.
+id() :- location of data
+dir():-  methods/functions of data
+print() :- show
+
+
+1. Integer :- int()
+------------------
+
+we can use int data type to represent whole number(Intgral values)
+
+>>> a = 10
+>>> type(a)
+<class 'int'>
+>>> b = - 10
+>>> type(b)
+<class 'int'>
+>>> 
+
+Change the Form
+
+1.Decimal Form(Float)
+2.Binary
+3.Octal
+4.Hexa Decimal
+
+1.Decimal Form:- (Base-10)
+---------------------
+It is the default number system in python(Float)
+use :- 0 to 9
+
+2.Binary:-(Base-2)
+-------------
+
+Use:- 0 and 1
+Inbuild :- bin()
+
+>>> #binary
+>>> a = 10
+>>> bin(a)
+'0b1010'
+>>> 
+>>> b = 56
+>>> bin(b)
+'0b111000'
+>>> 
+
+3.Octal:-(Base-8)
+-------------
+
+Use:- 0 and 7
+Inbuild :- oct()
+
+>>> a = 10
+>>> oct(a)
+'0o12'
+>>> 
+>>> b = 90
+>>> oct(b)
+'0o132'
+>>> 
+
+4.Hex Decimal(Base- 16):
+-----------------------
+
+use :- 0 to 9 and a to f
+Inbuild :- hex()
+>>> a = 100
+>>> hex(a)
+'0x64'
+>>> 

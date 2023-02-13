@@ -1,0 +1,85 @@
+while loops:-
+-------------
+
+if we want to execute a group statements iteratively until some condtion false, then we should ngo for while loop.
+
+while condition:
+	body/statements/expression
+
+1.To print 1 to 10:
+
+x = 1
+while x<=10:
+    print(x)
+    x = x+1
+
+ 2. To print nth no of mul
+
+n = int(input('Enter you number:-'))
+x = 1
+sum = 1
+while x<=n:
+    sum = sum*x
+    x = x+1
+print(sum)
+
+3.Infinity Loop
+
+i = 0
+while True:
+    i = i+1
+    print('hello',i)
+
+
+ H/W :-
+
+ Find out 1 to 20 even number using while loop.
+
+
+
+ Transfer Statememts:-
+ -------------------
+
+ i> break ii> continue iii>pass
+
+ i> break :- we can break statement inside the loop to break the loop execution based some condition.
+
+ for i in range(1,11):
+    if i == 6:
+        print('Loop break')
+        break
+    print(i)
+
+
+s = [67,89,45,34,90,23,97]
+
+for i in s:
+    if i == 34:
+        break
+    print(i)
+
+
+ii> continue:- We can use continue statement to skip current iteration and continue next iteration
+
+for i in range(1,11):
+    if i%2==0:
+        continue
+    print(i)
+
+
+name = ['Abhay','Abhishek','Asish','Binay','Sudir','Goutam','Bijay','Bikash','chandra','Biswa']
+
+updated_name = []
+for i in name:
+    if i[0]=='B':
+        continue
+    updated_name.append(i)
+print(updated_name)
+
+
+pass:- In our pogramming syntacally if block is required which won't do anthing then we can define that empty block with pass keyword.It's a null statement.
+
+for i in range(10):
+    pass
+
+
