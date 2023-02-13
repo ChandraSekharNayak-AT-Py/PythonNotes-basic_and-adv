@@ -1,5 +1,7 @@
 Identifiers:-
 ------------
+Identifiers Concept is very very importance for use because of name of python.
+Camel casing and Snake Casing helps alot for naming also.
 
 A name is python is called identifier.
 It can be class name or function name or module name or variable name
@@ -24,7 +26,7 @@ Rule to define identifiers in python:-
 
 ex:- 
 
->>> A1 = 56
+
 >>> a1 = 56
 >>> _a1 = 56
 
